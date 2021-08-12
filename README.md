@@ -8,7 +8,7 @@
 
 # Result
 
-> Currently Preparing
+> Currently Preparing...
 
 # Commit Description
 
@@ -18,4 +18,11 @@
 - 프로젝트에 필요없는 파일 제거.
 + fontawesome을 사용하기 위해 yarn을 통해 add 후 import.
 + habit tracker 목록에 들어갈 habit 코딩.
+```
+
+> Create function : handleIncrement, handleDecrement
+
+```
++) habit.jsx에서 버튼 클릭 시 count가 변경될 수 있도록 state의 count를 추가
++) +,-버튼을 누르면 count가 변경되는 function 구현 후 onClick event 설정
 ```
