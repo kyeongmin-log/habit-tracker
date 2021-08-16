@@ -26,3 +26,10 @@
 +) habit.jsx에서 버튼 클릭 시 count가 변경될 수 있도록 state의 count를 추가
 +) +,-버튼을 누르면 count가 변경되는 function 구현 후 onClick event 설정
 ```
+
+> Create Component : habits.jsx
+
+```
++ 만들어 둔 habit.jsx를 이용하여 여러 개의 habit 생성.
++ props를 이용하여 다른 component로 값 전달
+```
