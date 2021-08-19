@@ -39,3 +39,15 @@
 ```
 + 여러 개의 habit의 +, -, 휴지통 버튼을 클릭하면 동작하도록 구현
 ```
+
+> Fix Function : handle Increment, Decrement, Delete and Create Navbar
+
+```
++ state 오브젝트 자체를 직접 수정하는 것이 아닌 copy하여 수정하도록 변경
+    > state 오브젝트를 자체적으로 업데이트/변경하면 리액트의 렌더가 발생하지 않음
+
+*** (Fix를 먼저 커밋하고 navbar에 들어가야하는데 바로 들어가버렸다. 다음부터는 조심하자.) ***
+
++ Navbar.jsx 파일 생성
++ Navbar UI 구현
+```
