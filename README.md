@@ -33,3 +33,9 @@
 + 만들어 둔 habit.jsx를 이용하여 여러 개의 habit 생성.
 + props를 이용하여 다른 component로 값 전달
 ```
+
+> Create function : handle Increment, Decrement, Delete
+
+```
++ 여러 개의 habit의 +, -, 휴지통 버튼을 클릭하면 동작하도록 구현
+```
