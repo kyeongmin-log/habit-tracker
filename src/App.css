@@ -43,6 +43,7 @@ button {
   color: darkred;
 }
 
+/* Nav */
 nav {
   display: flex;
   align-items: center;
@@ -69,4 +70,21 @@ nav .count {
   background-color: forestgreen;
   color: white;
   border-radius: 50%;
+}
+
+/* HabitAdd */
+.habit-add {
+  padding: 0 18px;
+}
+
+.habit-input {
+  font-size: large;
+  margin-right: 8px;
+}
+
+.add-button {
+  background-color: forestgreen;
+  font-size: large;
+  padding: 4px 8px;
+  color: aliceblue;
 }

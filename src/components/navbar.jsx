@@ -4,7 +4,7 @@ class Navbar extends Component {
   render() {
     return (
       <nav>
-        <i class="fas fa-leaf"></i>
+        <i className="fas fa-leaf"></i>
         <h1>Habit Tracker</h1>
         <span className="count">0</span>
       </nav>

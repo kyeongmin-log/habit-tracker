@@ -51,3 +51,10 @@
 + Navbar.jsx 파일 생성
 + Navbar UI 구현
 ```
+
+> Create habitAdd.jsx : HTML/CSS
+
+```
++ habit을 추가할 habitAdd.jsx 추가
++ HTML, CSS 작성
+```
