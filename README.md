@@ -65,3 +65,15 @@
 + habit count를 초기화 할 Reset All 버튼 추가
 + HTML/CSS 작성
 ```
+
+> Create/Update Function
+
+```
+Create
++ habit을 추가할 수 있는 handleAdd function 구현
++ habit들의 count를 초기화 할 수 있는 handleReset funㅊtion 구현
+
+Update
++ 각 habit count의 총 개수를 세는 total을 만들기 위해 state를 app.jsx로 옮김
+    > state 값들은 props를 통해 사용할 수 있도록 태그 안에 값을 담아둠
+```
