@@ -58,3 +58,10 @@
 + habit을 추가할 habitAdd.jsx 추가
 + HTML, CSS 작성
 ```
+
+> Create habitReset.jsx : HTML/CSS
+
+```
++ habit count를 초기화 할 Reset All 버튼 추가
++ HTML/CSS 작성
+```

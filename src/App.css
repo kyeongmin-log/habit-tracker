@@ -73,7 +73,7 @@ nav .count {
 }
 
 /* HabitAdd */
-.habit-add {
+.habit-create {
   padding: 0 18px;
 }
 
@@ -82,9 +82,20 @@ nav .count {
   margin-right: 8px;
 }
 
-.add-button {
+.habit-add {
   background-color: forestgreen;
   font-size: large;
   padding: 4px 8px;
   color: aliceblue;
+}
+
+footer {
+  padding: 0 18px;
+}
+
+.habit-reset {
+  background-color: forestgreen;
+  color: aliceblue;
+  font-size: large;
+  padding: 4px 8px;
 }
