@@ -85,3 +85,17 @@ Update
     > 기능을 잘못 파악하였다. 습관 전체의 합이 아닌 현재 실행 중인 습관의 합을 계산하여 넘겨야한다.
 + Navbar의 시맨틱태그와 className을 좀 더 의미있게 수정
 ```
+
+> Fix : habitAdd.jsx > habitAddForm.jsx
+
+```
++ 기존 habitAdd.jsx => habitAddForm.jsx로 변경
+    > button이 아닌 form을 이용하여 데이터를 추가하도록 변경
++ app.jsx에 있던 habitAdd를 habit.jsx에 habitAddForm으로 변경
+    > form을 사용하면서 데이터를 habits에서 전달하도록 수정
++ 기존 habitAdd에 있던 className을 좀 더 의미있게 수정
+    > 그에 따른 css 변경
+- form을 이용하기에 habitAdd에서 Enter 이벤트를 수행하던 handleEnter function 제거
+
+* 기존에는 document를 이용하여 input의 값을 가져왔는데 react에서는 ref를 이용하여 input의 값을 가져오는 것이 바람직하다.
+```

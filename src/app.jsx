@@ -1,6 +1,5 @@
 import { Component, Fragment } from "react";
 import "./app.css";
-import HabitAdd from "./components/habitAdd";
 import HabitReset from "./components/habitReset";
 import Habits from "./components/habits";
 import Navbar from "./components/navbar";
@@ -20,7 +19,6 @@ class App extends Component {
 
     habits[index].count++;
     this.setState({ habits });
-    this.setState({ total: this.state.total + 1 });
   };
 
   handleDecrement = (habit) => {
@@ -30,7 +28,6 @@ class App extends Component {
     if (habits[index].count > 0) {
       habits[index].count--;
       this.setState({ habits });
-      this.setState({ total: this.state.total - 1 });
     }
   };
 
@@ -42,17 +39,10 @@ class App extends Component {
     this.setState({ habits });
   };
 
-  handleAdd = () => {
-    const input = document.querySelector(".habit-input");
-    if (input.value === "") return;
-
-    const habits = [...this.state.habits];
-    const id = habits[habits.length - 1].id;
-
-    habits.push({ id: id + 1, name: input.value, count: 0 });
+  handleAdd = (name) => {
+    const lastId = this.state.habits.length;
+    const habits = [...this.state.habits, { id: lastId + 1, name, count: 0 }];
     this.setState({ habits });
-    input.value = "";
-    input.focus();
   };
 
   handleReset = () => {
@@ -70,12 +60,12 @@ class App extends Component {
     return (
       <Fragment>
         <Navbar totalCount={this.state.habits.filter((item) => item.count > 0).length} />
-        <HabitAdd onAdd={this.handleAdd} />
         <Habits
           habits={this.state.habits}
           onIncrement={this.handleIncrement}
           onDecrement={this.handleDecrement}
           onDelete={this.handleDelete}
+          onAdd={this.handleAdd}
         />
         <HabitReset onReset={this.handleReset} />
       </Fragment>

@@ -73,16 +73,17 @@ button {
 }
 
 /* HabitAdd */
-.habit-create {
+.add-form {
   padding: 0 18px;
+  margin-top: 16px;
 }
 
-.habit-input {
+.add-input {
   font-size: large;
   margin-right: 8px;
 }
 
-.habit-add {
+.add-button {
   background-color: forestgreen;
   font-size: large;
   padding: 4px 8px;
