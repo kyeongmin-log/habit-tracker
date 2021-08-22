@@ -44,23 +44,23 @@ button {
 }
 
 /* Nav */
-nav {
+.navbar {
   display: flex;
   align-items: center;
   padding: 0 18px;
   background-color: bisque;
 }
 
-nav .fa-leaf {
+.navbar-logo {
   font-size: 28px;
   color: darkseagreen;
 }
 
-nav h1 {
+.navbar-title {
   padding: 0 18px;
 }
 
-nav .count {
+.navbar-count {
   display: inline-block;
   text-align: center;
   font-size: 2rem;

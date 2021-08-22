@@ -7,7 +7,6 @@ import Navbar from "./components/navbar";
 
 class App extends Component {
   state = {
-    total: 0,
     habits: [
       { id: 1, name: "Reading", count: 0 },
       { id: 2, name: "Running", count: 0 },
@@ -70,7 +69,7 @@ class App extends Component {
   render() {
     return (
       <Fragment>
-        <Navbar total={this.state.total} />
+        <Navbar totalCount={this.state.habits.filter((item) => item.count > 0).length} />
         <HabitAdd onAdd={this.handleAdd} />
         <Habits
           habits={this.state.habits}

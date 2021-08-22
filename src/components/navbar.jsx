@@ -2,13 +2,13 @@ import React, { Component } from "react";
 
 class Navbar extends Component {
   render() {
-    const total = this.props.total;
+    const total = this.props.totalCount;
     return (
-      <nav>
-        <i className="fas fa-leaf"></i>
-        <h1>Habit Tracker</h1>
-        <span className="count">{total}</span>
-      </nav>
+      <header className="navbar">
+        <i className="navbar-logo fas fa-leaf"></i>
+        <h1 className="navbar-title">Habit Tracker</h1>
+        <span className="navbar-count">{total}</span>
+      </header>
     );
   }
 }

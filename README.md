@@ -77,3 +77,11 @@ Update
 + 각 habit count의 총 개수를 세는 total을 만들기 위해 state를 app.jsx로 옮김
     > state 값들은 props를 통해 사용할 수 있도록 태그 안에 값을 담아둠
 ```
+
+> Fix : Navbar.jsx
+
+```
++ app.jsx에 state 중 total 삭제
+    > 기능을 잘못 파악하였다. 습관 전체의 합이 아닌 현재 실행 중인 습관의 합을 계산하여 넘겨야한다.
++ Navbar의 시맨틱태그와 className을 좀 더 의미있게 수정
+```
