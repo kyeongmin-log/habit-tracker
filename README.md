@@ -8,7 +8,7 @@
 
 # Result
 
-> Currently Preparing...
+![result](./result-img.gif)
 
 # Commit Description
 
