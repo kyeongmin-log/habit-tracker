@@ -99,3 +99,9 @@ Update
 
 * 기존에는 document를 이용하여 input의 값을 가져왔는데 react에서는 ref를 이용하여 input의 값을 가져오는 것이 바람직하다.
 ```
+
+> Delete : handleReset.jsx
+
+```
+- reset의 크기가 작고 딱 한반만 쓰이기에 따로 컴포넌트를 만들지 않고 habits 컴포넌트에 포함시켰다.
+```

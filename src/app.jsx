@@ -1,6 +1,5 @@
 import { Component, Fragment } from "react";
 import "./app.css";
-import HabitReset from "./components/habitReset";
 import Habits from "./components/habits";
 import Navbar from "./components/navbar";
 
@@ -46,14 +45,11 @@ class App extends Component {
   };
 
   handleReset = () => {
-    const habits = [...this.state.habits];
-
-    for (let habit of habits) {
+    const habits = this.state.habits.map((habit) => {
       habit.count = 0;
-    }
-
+      return habit;
+    });
     this.setState({ habits });
-    this.setState({ total: 0 });
   };
 
   render() {
@@ -66,8 +62,8 @@ class App extends Component {
           onDecrement={this.handleDecrement}
           onDelete={this.handleDelete}
           onAdd={this.handleAdd}
+          onReset={this.handleReset}
         />
-        <HabitReset onReset={this.handleReset} />
       </Fragment>
     );
   }
