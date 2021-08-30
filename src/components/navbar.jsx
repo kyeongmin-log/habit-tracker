@@ -1,6 +1,7 @@
-import React, { Component } from "react";
+import React, { PureComponent } from "react";
 
-class Navbar extends Component {
+class Navbar extends PureComponent {
+  1;
   render() {
     const total = this.props.totalCount;
     return (
