@@ -42,7 +42,8 @@ class App extends Component {
   };
 
   handleAdd = (name) => {
-    const lastId = this.state.habits.length;
+    const length = this.state.habits.length;
+    const lastId = this.state.habits[length - 1].id;
     const habits = [...this.state.habits, { id: lastId + 1, name, count: 0 }];
     this.setState({ habits });
   };
@@ -60,7 +61,9 @@ class App extends Component {
   render() {
     return (
       <Fragment>
-        <Navbar totalCount={this.state.habits.filter((item) => item.count > 0).length} />
+        <Navbar
+          totalCount={this.state.habits.filter((item) => item.count > 0).length}
+        />
         <Habits
           habits={this.state.habits}
           onIncrement={this.handleIncrement}
